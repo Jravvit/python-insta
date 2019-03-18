@@ -9,4 +9,5 @@
 
 - 인스타 파이
 
+  - [설치](./Instapy-install.md)
   - [템플릿 설명](Instapy-template.md)
