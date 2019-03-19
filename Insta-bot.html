@@ -1,0 +1,452 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>직접 만들어보기 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    설치
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="Install.html">
+            
+                <a href="Install.html">
+            
+                    
+                    1. 파이썬 설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="Install-VSCode.html">
+            
+                <a href="Install-VSCode.html">
+            
+                    
+                    2. VSCode 설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    인스타그램 봇
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="Insta-bot.html">
+            
+                <a href="Insta-bot.html">
+            
+                    
+                    직접 만들어보기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    인스타 파이
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="Instapy-install.html">
+            
+                <a href="Instapy-install.html">
+            
+                    
+                    설치
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="Instapy-template.html">
+            
+                <a href="Instapy-template.html">
+            
+                    
+                    템플릿 설명
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >직접 만들어보기</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="&#xC778;&#xC2A4;&#xD0C0;&#xADF8;&#xB7A8;-&#xBD07;-&#xC9C1;&#xC811;-&#xB9CC;&#xB4E4;&#xC5B4;-&#xBCF4;&#xAE30;">&#xC778;&#xC2A4;&#xD0C0;&#xADF8;&#xB7A8; &#xBD07; &#xC9C1;&#xC811; &#xB9CC;&#xB4E4;&#xC5B4; &#xBCF4;&#xAE30;</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> selenium <span class="hljs-keyword">import</span> webdriver
+<span class="hljs-keyword">from</span> selenium.webdriver.common.keys <span class="hljs-keyword">import</span> Keys
+<span class="hljs-keyword">from</span> time <span class="hljs-keyword">import</span> sleep, strftime
+<span class="hljs-keyword">from</span> random <span class="hljs-keyword">import</span> randint
+
+like_count = <span class="hljs-number">0</span>
+comment_count = <span class="hljs-number">0</span>
+
+<span class="hljs-comment"># &#xC88B;&#xC544;&#xC694; &#xAE30;&#xB2A5;</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">like</span><span class="hljs-params">(driver)</span>:</span>
+    <span class="hljs-keyword">try</span>:
+        like = driver.find_element_by_xpath(
+            <span class="hljs-string">&apos;/html/body/div[2]/div[2]/div/article/div[2]/section[1]/span[1]/button&apos;</span>)
+        like.click()
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">True</span>
+    <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> ex:
+        print(<span class="hljs-string">&quot;Failure Like&quot;</span>, ex)
+
+<span class="hljs-comment"># &#xB313;&#xAE00; &#xAE30;&#xB2A5;</span>
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">comment</span><span class="hljs-params">(driver, comment)</span>:</span>
+    <span class="hljs-keyword">try</span>:
+        driver.find_element_by_xpath(
+            <span class="hljs-string">&apos;/html/body/div[2]/div[2]/div/article/div[2]/section[1]/span[2]/button&apos;</span>).click()
+        comment = driver.find_element_by_xpath(
+            <span class="hljs-string">&apos;/html/body/div[2]/div[2]/div/article/div[2]/section[3]/div/form/textarea&apos;</span>)
+        comment.send_keys(comment)
+        comment.send_keys(Keys.ENTER)
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">True</span>
+    <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> ex:
+        print(<span class="hljs-string">&quot;Failure Comment&quot;</span>, ex)
+
+
+<span class="hljs-keyword">try</span>:
+    <span class="hljs-comment"># &#xC6F9; &#xB4DC;&#xB77C;&#xC774;&#xBC84;&#xAC00; &#xC800;&#xC7A5;&#xB41C; &#xC704;&#xCE58;</span>
+    <span class="hljs-comment"># &#xC708;&#xB3C4;&#xC6B0;&#xC5D0;&#xC11C; &#xC0AC;&#xC6A9;&#xD560; &#xACBD;&#xC6B0; &apos;&apos;&#xC55E;&#xC5D0; r &#xC0AC;&#xC6A9; </span>
+    <span class="hljs-comment"># ex) r&apos;&#xD06C;&#xB86C;&#xB4DC;&#xB77C;&#xC774;&#xBC84; &#xC704;&#xCE58;&apos;</span>
+    path = <span class="hljs-string">&apos;&#xD06C;&#xB86C;&#xB4DC;&#xB77C;&#xC774;&#xBC84; &#xC704;&#xCE58;&apos;</span>
+    <span class="hljs-comment"># &#xC140;&#xB808;&#xB2C8;&#xC6C0; &#xC2E4;&#xD589;</span>
+    driver = webdriver.Chrome(path)
+    <span class="hljs-comment"># &#xC6F9; &#xD398;&#xC774;&#xC9C0;&#xAC00; &#xC804;&#xBD80; &#xB730;&#xB54C;&#xAE4C;&#xC9C0; 3&#xCD08;&#xAC04; &#xAE30;&#xB2E4;&#xB9BC;</span>
+    driver.implicitly_wait(<span class="hljs-number">3</span>)
+    <span class="hljs-comment"># &#xC8FC;&#xC18C;&#xB85C; &#xC774;&#xB3D9;</span>
+    driver.get(<span class="hljs-string">&quot;https://www.instagram.com/accounts/login/?source=auth_switcher&quot;</span>)
+    <span class="hljs-comment"># 3&#xCD08;&#xAC04; &#xB3D9;&#xC791;&#xC744; &#xBA48;&#xCDA4;</span>
+    sleep(<span class="hljs-number">3</span>)
+
+    <span class="hljs-comment"># &#xC544;&#xC774;&#xB514; &#xC785;&#xB825; input &#xD0DC;&#xADF8;&#xC758; &#xACE0;&#xC720;&#xD55C; &#xAC12;&#xC778; username&#xC744; &#xCC3E;&#xC74C;</span>
+    username = driver.find_element_by_name(<span class="hljs-string">&apos;username&apos;</span>)
+    <span class="hljs-comment"># id&#xC785;&#xB825;&#xCC3D;&#xC5D0; &#xC544;&#xC774;&#xB514; &#xC785;&#xB825;</span>
+    username.send_keys(<span class="hljs-string">&apos;&#xC544;&#xC774;&#xB514; &#xC785;&#xB825;&apos;</span>)
+
+    <span class="hljs-comment"># &#xBE44;&#xBC00;&#xBC88;&#xD638; &#xC785;&#xB825; input &#xD0DC;&#xADF8;&#xC758; &#xACE0;&#xC720;&#xD55C; &#xAC12;&#xC778; password&#xB97C; &#xCC3E;&#xC74C;</span>
+    password = driver.find_element_by_name(<span class="hljs-string">&apos;password&apos;</span>)
+    <span class="hljs-comment"># password &#xC785;&#xB825;&#xCC3D;&#xC5D0; &#xBE44;&#xBC00;&#xBC88;&#xD638; &#xC785;&#xB825;</span>
+    password.send_keys(<span class="hljs-string">&quot;&#xBE44;&#xBC00;&#xBC88;&#xD638; &#xC785;&#xB825;&quot;</span>)
+
+    sleep(<span class="hljs-number">2</span>)
+
+    <span class="hljs-comment"># &#xB85C;&#xADF8;&#xC778; &#xBC84;&#xD2BC;&#xC744; &#xCC3E;&#xC74C;</span>
+    button_login = driver.find_element_by_xpath(
+        <span class="hljs-string">&apos;//*[@id=&quot;react-root&quot;]/section/main/div/article/div/div[1]/div/form/div[3]/button&apos;</span>)
+    <span class="hljs-comment"># &#xB85C;&#xADF8;&#xC778; &#xBC84;&#xD2BC; &#xD074;&#xB9AD;</span>
+    button_login.click()
+
+    sleep(<span class="hljs-number">3</span>)
+
+    <span class="hljs-comment"># &#xC54C;&#xB9BC; &#xC124;&#xC815; &#xD574;&#xC81C;</span>
+    notnow = driver.find_element_by_xpath(
+        <span class="hljs-string">&apos;/html/body/div[2]/div/div/div[3]/button[2]&apos;</span>)
+    notnow.click()
+
+    sleep(<span class="hljs-number">4</span>)
+
+    <span class="hljs-comment"># &#xD0DC;&#xADF8; &#xAC80;&#xC0C9;</span>
+    hashtag_list = [<span class="hljs-string">&apos;&#xACE0;&#xC591;&#xC774;&apos;</span>]
+
+    <span class="hljs-keyword">for</span> tag <span class="hljs-keyword">in</span> hashtag_list:
+        driver.get(<span class="hljs-string">&apos;https://www.instagram.com/explore/tags/&apos;</span> + tag + <span class="hljs-string">&apos;/&apos;</span>)
+
+        sleep(<span class="hljs-number">3</span>)
+
+        p = driver.find_elements_by_xpath(
+            <span class="hljs-string">&apos;//*[@id=&quot;react-root&quot;]/section/main/article/div[2]/div/div/div/a&apos;</span>)
+        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(len(p)):
+            p[i].find_element_by_tag_name(<span class="hljs-string">&apos;div&apos;</span>).click()
+            <span class="hljs-comment"># &#xC88B;&#xC544;&#xC694; &#xAE30;&#xB2A5;</span>
+            <span class="hljs-keyword">if</span>(like(driver)):
+                like_count += <span class="hljs-number">1</span>
+
+            <span class="hljs-comment"># &#xB514;&#xC2A4;&#xD06C;&#xB9BD;&#xC158;</span>
+            <span class="hljs-comment"># driver.find_element_by_xpath(</span>
+            <span class="hljs-comment">#     &apos;/html/body/div[2]/div[2]/div/article/div[2]/div[1]/ul/li/div/div/div/span&apos;).text</span>
+
+            <span class="hljs-comment"># &#xB313;&#xAE00; &#xB2EC;&#xAE30;</span>
+            txt = <span class="hljs-string">&quot;&#xC548;&#xB155;&#xD558;&#xC138;&#xC694;!&quot;</span>
+            <span class="hljs-keyword">if</span>(comment(driver, txt)):
+                comment_count += <span class="hljs-number">1</span>
+
+            sleep(randint(<span class="hljs-number">5</span>, <span class="hljs-number">10</span>))
+
+            <span class="hljs-comment"># &#xB2EB;&#xAE30;</span>
+            close = driver.find_element_by_xpath(
+                <span class="hljs-string">&apos;/html/body/div[2]/button[1]&apos;</span>)
+            close.click()
+            sleep(<span class="hljs-number">5</span>)
+<span class="hljs-keyword">finally</span>:
+    driver.quit()
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"직접 만들어보기","level":"1.3.1","depth":2,"next":{"title":"인스타 파이","level":"1.4","depth":1,"ref":"","articles":[{"title":"설치","level":"1.4.1","depth":2,"path":"Instapy-install.md","ref":"./Instapy-install.md","articles":[]},{"title":"템플릿 설명","level":"1.4.2","depth":2,"path":"Instapy-template.md","ref":"Instapy-template.md","articles":[]}]},"previous":{"title":"인스타그램 봇","level":"1.3","depth":1,"ref":"","articles":[{"title":"직접 만들어보기","level":"1.3.1","depth":2,"path":"Insta-bot.md","ref":"Insta-bot.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Insta-bot.md","mtime":"2019-03-19T01:09:18.435Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-19T01:09:27.289Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
