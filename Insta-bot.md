@@ -1,6 +1,6 @@
 ### 인스타그램 봇 직접 만들어 보기
 
-
+https://docs.google.com/presentation/d/1jy394LovN_AqtAn2ywvIcyYc0CToeowPPd2hKZ4HQKQ/edit?usp=sharing
 
 
 
