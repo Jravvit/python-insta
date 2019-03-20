@@ -62,5 +62,34 @@ Day of week 는 특정 주
 
    ![c3](src/c3.png)
 
-   그리고 나서 이 파일을 실행 시킬 python을 불러 와야 하는데요. mac은 기본 python2.7이 설치가 되어있어서 python3를 불러 와야 합니다.
+   그리고 나서 이 파일을 실행 시킬 python을 불러 와야 하는데요. mac은 기본 python2.7이 설치가 되어있어서 python3를 불러 와야 합니다. 이때 단순히 python3이렇게 해서 불러오는게 아니라 python3의 위치까지 정확히 지정해 줘야 합니다.
 
+   ---
+
+   ##### 3.1 파이썬 위치 알아내기
+
+   ![mac-python-location](/Users/jeonjihun/Desktop/project/pyinsta/src/mac-python-location.png)
+
+   VSCode 터미널혹은 맥 터미널에서 
+
+   ```
+   which python3
+   ```
+
+   라고 입력 합니다.
+
+   그러면 위 사진과 같이 명령어 밑에 **/usr/local/bin/python3** 라고 나오는데 이게 python3의 실행파일의 위치 입니다.
+
+   ---
+
+   이제 python3의 실행파일 위치도 알았으니 Command 창 안에 파일 위치 앞에 python3의 위치를 입력해줍니다. 
+
+   ```
+   #실행 구조
+   /usr/local/bin/python3 실행할파일위치
+    
+   # 실제 실행 명령어
+   /usr/local/bin/python3 /Users/Desktop/instapy-quickstart-master/instapy-quickstart-master/like_by_tags.py
+   ```
+
+   위와 같이 입력을 해줍니다. 실행파일 위치의 경우 하시는 분 마다 다를 것입니다.
