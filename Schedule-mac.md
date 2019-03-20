@@ -19,13 +19,13 @@ Cronnix는 주기적으로 반복해야 하는 프로그램을 실행 시켜주�
 
 1. Cronnix를 키고 New를누릅니다. 
 
-![c1](/Users/jeonjihun/Desktop/project/pyinsta/src/c1.png)
+![c1](./src/c1.png)
 
 
 
 2. New 를 누르면 아래와 같이 나오는데 Simpe탭을 눌러서 이동한후 보면 아래와 같은 화면이 나옵니다.
 
-![c2](/Users/jeonjihun/Desktop/project/pyinsta/src/c2.png)
+![c2](./src/c2.png)
 
 빨간 상자를 보면 상자 앞에 Minute ,Hour등이 써있고 그다음에 체크 박스가 있습니다. 
 
@@ -60,7 +60,7 @@ Day of week 는 특정 주
 
 3. 시간을 설정했으면 아래에 Command에 실행 시킬 프로그램을 불러 옵니다. 우리는 like_by_tags.py를 실행 시켜 보겠습니다. Browse..버튼을 눌러서 like_by_tags.py파일을 불러옵니다.
 
-   ![c3](/Users/jeonjihun/Desktop/project/pyinsta/src/c3.png)
+   ![c3](./src/c3.png)
 
    그리고 나서 이 파일을 실행 시킬 python을 불러 와야 하는데요. mac은 기본 python2.7이 설치가 되어있어서 python3를 불러 와야 합니다.
 
