@@ -9,5 +9,5 @@
   - [설치](./Instapy-install.md)
   - [템플릿 설명](Instapy-template.md)
 - 자동 실행
-  - [윈도우]()
+  - [윈도우](Schedule-windows.md)
   - [맥](Schedule-mac.md)

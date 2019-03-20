@@ -93,3 +93,17 @@ Day of week 는 특정 주
    ```
 
    위와 같이 입력을 해줍니다. 실행파일 위치의 경우 하시는 분 마다 다를 것입니다.
+
+   모든 설정을 다했으면 "New"버튼을 눌러줍니다.
+
+   
+
+4. 생성이 완료되면 맨처음 프로그램을 켰을때 화면에 우리가한 설정 값이 보일겁니다. 이때 "Save"를 눌러 줍니다. 이건 컴퓨터에 내가한 설정을 적용 시켜주는 작업입니다. 항상 설정하고 나서 "Save"를 눌러주셔야 하고 설정을 지우고 싶을때도 "Delete"를 누른후 "Save"해줘야 반영 됩니다.
+
+![new-mac](/Users/jeonjihun/Desktop/project/pyinsta/src/new-mac.png)
+
+
+
+5. "Save" 를 누르면 아래와 같은 메시지가 나오는데 확인을 누르면 실제로 반영이 되면서 봇이 작동하게 됩니다.
+
+![alert-mac](/Users/jeonjihun/Desktop/project/pyinsta/src/alert-mac.png)
