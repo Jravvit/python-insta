@@ -10,4 +10,4 @@
   - [템플릿 설명](Instapy-template.md)
 - 자동 실행
   - [윈도우]()
-  - [맥]()
+  - [맥](Schedule-mac.md)
