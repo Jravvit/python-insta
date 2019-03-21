@@ -19,13 +19,13 @@ Cronnix는 주기적으로 반복해야 하는 프로그램을 실행 시켜주�
 
 1. Cronnix를 키고 New를누릅니다. 
 
-![c1](src/c1.png)
+![c1](./src/c1.png)
 
 
 
 2. New 를 누르면 아래와 같이 나오는데 Simpe탭을 눌러서 이동한후 보면 아래와 같은 화면이 나옵니다.
 
-![c2](src/c2.png)
+![c2](./src/c2.png)
 
 빨간 상자를 보면 상자 앞에 Minute ,Hour등이 써있고 그다음에 체크 박스가 있습니다. 
 
@@ -60,7 +60,7 @@ Day of week 는 특정 주
 
 3. 시간을 설정했으면 아래에 Command에 실행 시킬 프로그램을 불러 옵니다. 우리는 like_by_tags.py를 실행 시켜 보겠습니다. Browse..버튼을 눌러서 like_by_tags.py파일을 불러옵니다.
 
-   ![c3](src/c3.png)
+   ![c3](./src/c3.png)
 
    그리고 나서 이 파일을 실행 시킬 python을 불러 와야 하는데요. mac은 기본 python2.7이 설치가 되어있어서 python3를 불러 와야 합니다. 이때 단순히 python3이렇게 해서 불러오는게 아니라 python3의 위치까지 정확히 지정해 줘야 합니다.
 
@@ -68,7 +68,7 @@ Day of week 는 특정 주
 
    ##### 3.1 파이썬 위치 알아내기
 
-   ![mac-python-location](/Users/jeonjihun/Desktop/project/pyinsta/src/mac-python-location.png)
+   ![mac-python-location](./src/mac-python-location.png)
 
    VSCode 터미널혹은 맥 터미널에서 
 
@@ -100,10 +100,10 @@ Day of week 는 특정 주
 
 4. 생성이 완료되면 맨처음 프로그램을 켰을때 화면에 우리가한 설정 값이 보일겁니다. 이때 "Save"를 눌러 줍니다. 이건 컴퓨터에 내가한 설정을 적용 시켜주는 작업입니다. 항상 설정하고 나서 "Save"를 눌러주셔야 하고 설정을 지우고 싶을때도 "Delete"를 누른후 "Save"해줘야 반영 됩니다.
 
-![new-mac](/Users/jeonjihun/Desktop/project/pyinsta/src/new-mac.png)
+![new-mac](./src/new-mac.png)
 
 
 
 5. "Save" 를 누르면 아래와 같은 메시지가 나오는데 확인을 누르면 실제로 반영이 되면서 봇이 작동하게 됩니다.
 
-![alert-mac](/Users/jeonjihun/Desktop/project/pyinsta/src/alert-mac.png)
+![alert-mac](./src/alert-mac.png)
