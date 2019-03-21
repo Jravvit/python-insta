@@ -87,3 +87,14 @@ where python
 
 ![s6](./src/s6.png)
 
+
+
+
+
+참고
+
+- https://wikidocs.net/19295
+- https://www.tabmode.com/goods/windows10/win10-shutdown-timer.html
+- https://freeprog.tistory.com/346
+- https://stackoverflow.com/questions/647515/how-can-i-find-where-python-is-installed-on-windows
+- https://fnmj.tistory.com/19
