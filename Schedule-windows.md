@@ -69,7 +69,7 @@ where python
 
 라고 입력 합니다.
 
-그러면 위 사진과 같이 명령어 밑에 **c:\Users\123\AppData\Local\Programs\Python\Python36-32\python.exe** 라고 나오는데 이게 python3의 실행파일의 위치 입니다.
+그러면 위 사진과 같이 명령어 밑에 **c:\Users\123\AppData\Local\Programs\Python\Python36-32\python.exe** 라고 나오는데 이게 python의 실행파일의 위치 입니다.
 
 ---
 
