@@ -4,3 +4,7 @@
 
 
 
+파이썬 기초 문법 자료는 아래 링크에서 보실 수 있습니다.
+
+https://docs.google.com/presentation/d/1QnQ32YsqIdqVKclsCsFQmrzB07NQUtcVB5of8HpMCPg/edit?usp=sharing
+
