@@ -5,9 +5,7 @@
 
 Cronnix는 아래 링크를 통해 다운 받으실수 있습니다. 
 
-[Cronnix](./src/Cronnix.3.0.2.app.zip)
-
-
+[Cronnix](https://drive.google.com/file/d/1IMB4iOC7i3yz80SNKnLnGPc3xCZzIR47/view?usp=sharing)
 
 ### Cronnix 
 
