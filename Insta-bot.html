@@ -326,7 +326,7 @@ comment_count = <span class="hljs-number">0</span>
 <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">like</span><span class="hljs-params">(driver)</span>:</span>
     <span class="hljs-keyword">try</span>:
         like = driver.find_element_by_xpath(
-            <span class="hljs-string">&apos;/html/body/div[2]/div[2]/div/article/div[2]/section[1]/span[1]/button&apos;</span>)
+            <span class="hljs-string">&apos;/html/body/div[3]/div[2]/div/article/div[2]/section[1]/span[1]/button&apos;</span>)
         like.click()
         <span class="hljs-keyword">return</span> <span class="hljs-keyword">True</span>
     <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> ex:
@@ -347,14 +347,14 @@ comment_count = <span class="hljs-number">0</span>
     <span class="hljs-keyword">except</span> Exception <span class="hljs-keyword">as</span> ex:
         print(<span class="hljs-string">&quot;Failure Comment&quot;</span>, ex)
 
+<span class="hljs-comment"># &#xC6F9; &#xB4DC;&#xB77C;&#xC774;&#xBC84;&#xAC00; &#xC800;&#xC7A5;&#xB41C; &#xC704;&#xCE58;</span>
+<span class="hljs-comment"># &#xC708;&#xB3C4;&#xC6B0;&#xC5D0;&#xC11C; &#xC0AC;&#xC6A9;&#xD560; &#xACBD;&#xC6B0; &apos;&apos;&#xC55E;&#xC5D0; r &#xC0AC;&#xC6A9;</span>
+<span class="hljs-comment"># ex) r&apos;&#xD06C;&#xB86C;&#xB4DC;&#xB77C;&#xC774;&#xBC84; &#xC704;&#xCE58;&apos;</span>
+path = <span class="hljs-string">&apos;&#xD06C;&#xB86C;&#xB4DC;&#xB77C;&#xC774;&#xBC84; &#xC704;&#xCE58;&apos;</span>
+<span class="hljs-comment"># &#xC140;&#xB808;&#xB2C8;&#xC6C0; &#xC2E4;&#xD589;</span>
+driver = webdriver.Chrome(path)
 
 <span class="hljs-keyword">try</span>:
-    <span class="hljs-comment"># &#xC6F9; &#xB4DC;&#xB77C;&#xC774;&#xBC84;&#xAC00; &#xC800;&#xC7A5;&#xB41C; &#xC704;&#xCE58;</span>
-    <span class="hljs-comment"># &#xC708;&#xB3C4;&#xC6B0;&#xC5D0;&#xC11C; &#xC0AC;&#xC6A9;&#xD560; &#xACBD;&#xC6B0; &apos;&apos;&#xC55E;&#xC5D0; r &#xC0AC;&#xC6A9; </span>
-    <span class="hljs-comment"># ex) r&apos;&#xD06C;&#xB86C;&#xB4DC;&#xB77C;&#xC774;&#xBC84; &#xC704;&#xCE58;&apos;</span>
-    path = <span class="hljs-string">&apos;&#xD06C;&#xB86C;&#xB4DC;&#xB77C;&#xC774;&#xBC84; &#xC704;&#xCE58;&apos;</span>
-    <span class="hljs-comment"># &#xC140;&#xB808;&#xB2C8;&#xC6C0; &#xC2E4;&#xD589;</span>
-    driver = webdriver.Chrome(path)
     <span class="hljs-comment"># &#xC6F9; &#xD398;&#xC774;&#xC9C0;&#xAC00; &#xC804;&#xBD80; &#xB730;&#xB54C;&#xAE4C;&#xC9C0; 3&#xCD08;&#xAC04; &#xAE30;&#xB2E4;&#xB9BC;</span>
     driver.implicitly_wait(<span class="hljs-number">3</span>)
     <span class="hljs-comment"># &#xC8FC;&#xC18C;&#xB85C; &#xC774;&#xB3D9;</span>
@@ -376,7 +376,7 @@ comment_count = <span class="hljs-number">0</span>
 
     <span class="hljs-comment"># &#xB85C;&#xADF8;&#xC778; &#xBC84;&#xD2BC;&#xC744; &#xCC3E;&#xC74C;</span>
     button_login = driver.find_element_by_xpath(
-        <span class="hljs-string">&apos;//*[@id=&quot;react-root&quot;]/section/main/div/article/div/div[1]/div/form/div[3]/button&apos;</span>)
+        <span class="hljs-string">&apos;//*[@id=&quot;react-root&quot;]/section/main/div/article/div/div[1]/div/form/div[4]/button&apos;</span>)
     <span class="hljs-comment"># &#xB85C;&#xADF8;&#xC778; &#xBC84;&#xD2BC; &#xD074;&#xB9AD;</span>
     button_login.click()
 
@@ -398,7 +398,7 @@ comment_count = <span class="hljs-number">0</span>
         sleep(<span class="hljs-number">3</span>)
 
         p = driver.find_elements_by_xpath(
-            <span class="hljs-string">&apos;//*[@id=&quot;react-root&quot;]/section/main/article/div[2]/div/div/div/a&apos;</span>)
+            <span class="hljs-string">&apos;//*[@id=&quot;react-root&quot;]/section/main/article/div[2]/div/div[1]/div&apos;</span>)
         <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(len(p)):
             p[i].find_element_by_tag_name(<span class="hljs-string">&apos;div&apos;</span>).click()
             <span class="hljs-comment"># &#xC88B;&#xC544;&#xC694; &#xAE30;&#xB2A5;</span>
@@ -418,7 +418,7 @@ comment_count = <span class="hljs-number">0</span>
 
             <span class="hljs-comment"># &#xB2EB;&#xAE30;</span>
             close = driver.find_element_by_xpath(
-                <span class="hljs-string">&apos;/html/body/div[2]/button[1]&apos;</span>)
+                <span class="hljs-string">&apos;/html/body/div[3]/button[1]&apos;</span>)
             close.click()
             sleep(<span class="hljs-number">5</span>)
 <span class="hljs-keyword">finally</span>:
@@ -459,7 +459,7 @@ comment_count = <span class="hljs-number">0</span>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"직접 만들어보기","level":"1.3.1","depth":2,"next":{"title":"인스타 파이","level":"1.4","depth":1,"ref":"","articles":[{"title":"설치","level":"1.4.1","depth":2,"path":"Instapy-install.md","ref":"./Instapy-install.md","articles":[]},{"title":"템플릿 설명","level":"1.4.2","depth":2,"path":"Instapy-template.md","ref":"Instapy-template.md","articles":[]}]},"previous":{"title":"인스타그램 봇","level":"1.3","depth":1,"ref":"","articles":[{"title":"직접 만들어보기","level":"1.3.1","depth":2,"path":"Insta-bot.md","ref":"Insta-bot.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Insta-bot.md","mtime":"2019-03-19T01:12:07.040Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-22T03:38:34.383Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"직접 만들어보기","level":"1.3.1","depth":2,"next":{"title":"인스타 파이","level":"1.4","depth":1,"ref":"","articles":[{"title":"설치","level":"1.4.1","depth":2,"path":"Instapy-install.md","ref":"./Instapy-install.md","articles":[]},{"title":"템플릿 설명","level":"1.4.2","depth":2,"path":"Instapy-template.md","ref":"Instapy-template.md","articles":[]}]},"previous":{"title":"인스타그램 봇","level":"1.3","depth":1,"ref":"","articles":[{"title":"직접 만들어보기","level":"1.3.1","depth":2,"path":"Insta-bot.md","ref":"Insta-bot.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Insta-bot.md","mtime":"2019-04-13T15:34:06.735Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-13T15:34:36.341Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

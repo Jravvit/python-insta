@@ -2,8 +2,6 @@
 
 https://docs.google.com/presentation/d/1jy394LovN_AqtAn2ywvIcyYc0CToeowPPd2hKZ4HQKQ/edit?usp=sharing
 
-
-
 ```python
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -19,7 +17,7 @@ comment_count = 0
 def like(driver):
     try:
         like = driver.find_element_by_xpath(
-            '/html/body/div[2]/div[2]/div/article/div[2]/section[1]/span[1]/button')
+            '/html/body/div[3]/div[2]/div/article/div[2]/section[1]/span[1]/button')
         like.click()
         return True
     except Exception as ex:
@@ -40,14 +38,14 @@ def comment(driver, comment):
     except Exception as ex:
         print("Failure Comment", ex)
 
+# 웹 드라이버가 저장된 위치
+# 윈도우에서 사용할 경우 ''앞에 r 사용
+# ex) r'크롬드라이버 위치'
+path = '크롬드라이버 위치'
+# 셀레니움 실행
+driver = webdriver.Chrome(path)
 
 try:
-    # 웹 드라이버가 저장된 위치
-    # 윈도우에서 사용할 경우 ''앞에 r 사용 
-    # ex) r'크롬드라이버 위치'
-    path = '크롬드라이버 위치'
-    # 셀레니움 실행
-    driver = webdriver.Chrome(path)
     # 웹 페이지가 전부 뜰때까지 3초간 기다림
     driver.implicitly_wait(3)
     # 주소로 이동
@@ -69,7 +67,7 @@ try:
 
     # 로그인 버튼을 찾음
     button_login = driver.find_element_by_xpath(
-        '//*[@id="react-root"]/section/main/div/article/div/div[1]/div/form/div[3]/button')
+        '//*[@id="react-root"]/section/main/div/article/div/div[1]/div/form/div[4]/button')
     # 로그인 버튼 클릭
     button_login.click()
 
@@ -91,7 +89,7 @@ try:
         sleep(3)
 
         p = driver.find_elements_by_xpath(
-            '//*[@id="react-root"]/section/main/article/div[2]/div/div/div/a')
+            '//*[@id="react-root"]/section/main/article/div[2]/div/div[1]/div')
         for i in range(len(p)):
             p[i].find_element_by_tag_name('div').click()
             # 좋아요 기능
@@ -111,11 +109,10 @@ try:
 
             # 닫기
             close = driver.find_element_by_xpath(
-                '/html/body/div[2]/button[1]')
+                '/html/body/div[3]/button[1]')
             close.click()
             sleep(5)
 finally:
     driver.quit()
 
 ```
-
